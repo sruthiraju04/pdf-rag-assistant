@@ -1,0 +1,15 @@
+[server]
+# Disable file watching in production to save resources and prevent watcher inspection crashes
+fileWatcherType = "none"
+# Keep upload limits aligned with MAX_UPLOAD_SIZE_MB in .env.template/config.py
+maxUploadSize = 25
+# Run headless (no automatic browser opening on server start)
+headless = true
+
+[browser]
+# Disable Streamlit telemetry/usage stats gathering
+gatherUsageStats = false
+
+[client]
+# Do not expose raw Python execution errors/tracebacks to the end-users in the UI
+showErrorDetails = false
